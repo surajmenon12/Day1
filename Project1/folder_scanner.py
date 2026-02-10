@@ -80,6 +80,7 @@ def scan_folder(folder_path, extensions=None):
 def build_report(stats):
     """Build a formatted report string from scan statistics."""
     lines = []
+<<<<<<< Updated upstream
     sep = "*" * 60
 
     lines.append(sep)
@@ -87,6 +88,15 @@ def build_report(stats):
     lines.append(sep)
     lines.append(f"  Directory:  {stats['folder_path']}")
     lines.append(f"  Generated:  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+=======
+    sep = "-" * 60
+
+    lines.append(sep)
+    lines.append("  DIRECTORY SCAN SUMMARY (MAIN)")
+    lines.append(sep)
+    lines.append(f"  Path:     {stats['folder_path']}")
+    lines.append(f"  Run at:   {datetime.now().strftime('%d %b %Y, %I:%M %p')}")
+>>>>>>> Stashed changes
     if stats.get("filter"):
         lines.append(f"  Filter:   {', '.join(stats['filter'])}")
     lines.append(sep)
