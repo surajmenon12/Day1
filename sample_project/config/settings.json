@@ -1,0 +1,26 @@
+{
+  "app_name": "Analytics Dashboard",
+  "version": "1.2.0",
+  "debug": false,
+  "database": {
+    "engine": "sqlite",
+    "name": "dashboard.db",
+    "pool_size": 5
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 5000,
+    "workers": 4
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/app.log",
+    "max_size_mb": 10,
+    "backup_count": 3
+  },
+  "features": {
+    "dark_mode": true,
+    "export_csv": true,
+    "notifications": false
+  }
+}

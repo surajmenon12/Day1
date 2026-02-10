@@ -1,0 +1,26 @@
+============================================================
+  FOLDER SCAN REPORT
+============================================================
+  Scanned:  /Users/suraj.menon/Assignments/Day1
+  Date:     2026-02-10 09:44:16
+============================================================
+
+>> Overview
+   Total files:    2
+   Total folders:  0
+   Total size:     4.86 KB
+
+>> Largest File
+   folder_scanner.py  (4.24 KB)
+
+>> File Type Breakdown
+   .txt                     1 file(s)       637.00 B
+   .py                      1 file(s)        4.24 KB
+
+>> All Files
+   folder_scanner.py                             4.24 KB
+   scan_report.txt                              637.00 B
+
+============================================================
+  END OF REPORT
+============================================================

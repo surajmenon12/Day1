@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Analytics Dashboard</h1>
+            <span id="last-updated"></span>
+        </div>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Total Users</h3>
+                <div class="value" id="total-users">--</div>
+            </div>
+            <div class="card">
+                <h3>Active Sessions</h3>
+                <div class="value" id="active-sessions">--</div>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <div class="value" id="revenue">--</div>
+            </div>
+            <div class="card">
+                <h3>Uptime</h3>
+                <div class="value" id="uptime">--</div>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody id="user-table"></tbody>
+        </table>
+    </div>
+    <script src="utils.js"></script>
+</body>
+</html>

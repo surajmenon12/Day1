@@ -1,0 +1,23 @@
+{
+  "monthly_stats": [
+    {"month": "2024-01", "visits": 12450, "unique_users": 3200, "revenue": 18500.00},
+    {"month": "2024-02", "visits": 15320, "unique_users": 4100, "revenue": 21200.50},
+    {"month": "2024-03", "visits": 18900, "unique_users": 5300, "revenue": 24350.75},
+    {"month": "2024-04", "visits": 22100, "unique_users": 6800, "revenue": 28900.00},
+    {"month": "2024-05", "visits": 19800, "unique_users": 5900, "revenue": 26100.25},
+    {"month": "2024-06", "visits": 24500, "unique_users": 7200, "revenue": 31500.00},
+    {"month": "2024-07", "visits": 28100, "unique_users": 8500, "revenue": 35200.50},
+    {"month": "2024-08", "visits": 31200, "unique_users": 9800, "revenue": 39800.00},
+    {"month": "2024-09", "visits": 27600, "unique_users": 8100, "revenue": 33400.75},
+    {"month": "2024-10", "visits": 33500, "unique_users": 10200, "revenue": 42100.00},
+    {"month": "2024-11", "visits": 36800, "unique_users": 11500, "revenue": 45600.50},
+    {"month": "2024-12", "visits": 41200, "unique_users": 13000, "revenue": 52300.00}
+  ],
+  "top_pages": [
+    {"path": "/dashboard", "views": 98500},
+    {"path": "/analytics", "views": 67200},
+    {"path": "/settings", "views": 34100},
+    {"path": "/users", "views": 28700},
+    {"path": "/reports", "views": 19400}
+  ]
+}

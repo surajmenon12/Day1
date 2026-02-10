@@ -1,0 +1,11 @@
+id,name,email,role,created_at
+1,Alice Johnson,alice@example.com,admin,2024-01-15
+2,Bob Smith,bob@example.com,editor,2024-02-20
+3,Charlie Brown,charlie@example.com,viewer,2024-03-05
+4,Diana Prince,diana@example.com,editor,2024-03-18
+5,Eve Adams,eve@example.com,viewer,2024-04-01
+6,Frank Castle,frank@example.com,viewer,2024-04-22
+7,Grace Hopper,grace@example.com,admin,2024-05-10
+8,Hank Pym,hank@example.com,editor,2024-06-14
+9,Ivy Chen,ivy@example.com,viewer,2024-07-03
+10,Jack Ryan,jack@example.com,viewer,2024-08-19

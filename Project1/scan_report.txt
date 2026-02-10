@@ -1,0 +1,35 @@
+============================================================
+  FOLDER SCAN REPORT
+============================================================
+  Scanned:  /Users/suraj.menon/Assignments/Day1/sample_project
+  Date:     2026-02-10 10:02:07
+============================================================
+
+>> Overview
+   Total files:    3
+   Total folders:  7
+   Total size:     1.36 KB
+
+>> Largest File
+   LICENSE  (1.05 KB)
+
+>> File Type Breakdown
+   (no extension)           3 file(s)        1.36 KB
+
+>> All Files
+   LICENSE                                       1.05 KB
+   Makefile                                     248.00 B
+   .gitignore                                    76.00 B
+
+>> Subfolders
+   assets/
+   config/
+   data/
+   docs/
+   logs/
+   src/
+   tests/
+
+============================================================
+  END OF REPORT
+============================================================
