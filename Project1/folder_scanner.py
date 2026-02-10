@@ -17,11 +17,27 @@ def format_size(size_bytes):
     return f"{size_bytes:.2f} PB"
 
 
-def scan_folder(folder_path):
-    """Scan a folder and return statistics about its contents."""
+def scan_folder(folder_path, extensions=None):
+    """Scan a folder and return statistics about its contents.
+
+    Args:
+        folder_path: Path to the directory to scan.
+        extensions: Optional list of extensions to include (e.g. [".py", ".js"]).
+                    If None, all files are included.
+    """
     if not os.path.isdir(folder_path):
         print(f"Error: '{folder_path}' is not a valid directory.")
         sys.exit(1)
+
+    # Normalise the filter set: ensure each extension starts with a dot
+    ext_filter = None
+    if extensions:
+        ext_filter = set()
+        for e in extensions:
+            e = e.lower().strip()
+            if not e.startswith("."):
+                e = "." + e
+            ext_filter.add(e)
 
     files = []
     dirs = []
@@ -33,6 +49,11 @@ def scan_folder(folder_path):
         elif entry.is_file(follow_symlinks=False):
             stat = entry.stat()
             ext = os.path.splitext(entry.name)[1].lower() or "(no extension)"
+
+            # Skip files that don't match the filter
+            if ext_filter and ext not in ext_filter:
+                continue
+
             files.append({
                 "name": entry.name,
                 "size": stat.st_size,
@@ -66,6 +87,8 @@ def build_report(stats):
     lines.append(sep)
     lines.append(f"  Scanned:  {stats['folder_path']}")
     lines.append(f"  Date:     {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    if stats.get("filter"):
+        lines.append(f"  Filter:   {', '.join(stats['filter'])}")
     lines.append(sep)
 
     # Overview
@@ -123,9 +146,23 @@ def main():
         help="Output report file path (default: scan_report.txt in current directory)",
         default="scan_report.txt",
     )
+    parser.add_argument(
+        "-e", "--ext",
+        nargs="+",
+        metavar="EXT",
+        help="Filter by file extension(s). Example: -e .py .js  or  -e py js",
+    )
     args = parser.parse_args()
 
-    stats = scan_folder(args.folder)
+    stats = scan_folder(args.folder, extensions=args.ext)
+    if args.ext:
+        normalised = []
+        for e in args.ext:
+            e = e.lower().strip()
+            if not e.startswith("."):
+                e = "." + e
+            normalised.append(e)
+        stats["filter"] = sorted(set(normalised))
     report = build_report(stats)
 
     # Print to console

@@ -1,0 +1,28 @@
+============================================================
+  FOLDER SCAN REPORT
+============================================================
+  Scanned:  /Users/suraj.menon/Assignments/Day1/sample_project/src
+  Date:     2026-02-10 10:10:36
+  Filter:   .js, .py
+============================================================
+
+>> Overview
+   Total files:    3
+   Total folders:  0
+   Total size:     2.36 KB
+
+>> Largest File
+   app.py  (945.00 B)
+
+>> File Type Breakdown
+   .py                      2 file(s)        1.58 KB
+   .js                      1 file(s)       798.00 B
+
+>> All Files
+   app.py                                       945.00 B
+   utils.js                                     798.00 B
+   models.py                                    674.00 B
+
+============================================================
+  END OF REPORT
+============================================================

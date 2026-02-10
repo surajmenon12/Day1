@@ -1,0 +1,31 @@
+============================================================
+  FOLDER SCAN REPORT
+============================================================
+  Scanned:  /Users/suraj.menon/Assignments/Day1/sample_project/src
+  Date:     2026-02-10 10:10:25
+============================================================
+
+>> Overview
+   Total files:    5
+   Total folders:  0
+   Total size:     5.39 KB
+
+>> Largest File
+   styles.css  (1.71 KB)
+
+>> File Type Breakdown
+   .py                      2 file(s)        1.58 KB
+   .html                    1 file(s)        1.33 KB
+   .css                     1 file(s)        1.71 KB
+   .js                      1 file(s)       798.00 B
+
+>> All Files
+   styles.css                                    1.71 KB
+   index.html                                    1.33 KB
+   app.py                                       945.00 B
+   utils.js                                     798.00 B
+   models.py                                    674.00 B
+
+============================================================
+  END OF REPORT
+============================================================
